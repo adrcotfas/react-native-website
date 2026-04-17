@@ -112,6 +112,46 @@ Color of the foreground switch grip. If this is set on iOS, the switch grip will
 
 ---
 
+### `thumbColorForFalse` <div className="label android">Android</div>
+
+Thumb color when the switch is off. Overrides `thumbColor` for the unchecked state.
+
+| Type               |
+| ------------------ |
+| [color](colors.md) |
+
+---
+
+### `thumbColorForTrue` <div className="label android">Android</div>
+
+Thumb color when the switch is on. Overrides `thumbColor` for the checked state.
+
+| Type               |
+| ------------------ |
+| [color](colors.md) |
+
+---
+
+### `thumbIcon` <div className="label android">Android</div>
+
+Drawable resource name(s) to display as an icon inside the thumb. Accepts a `{false, true}` object (like `trackColor`) so each state can have a different icon. Omit a key to show no icon for that state. Requires Material Design 3 (MaterialSwitch).
+
+| Type                                        |
+| ------------------------------------------- |
+| `{false?: string \| null, true?: string \| null}` |
+
+---
+
+### `thumbIconTint` <div className="label android">Android</div>
+
+Color tint applied to the thumb icon.
+
+| Type               |
+| ------------------ |
+| [color](colors.md) |
+
+---
+
 ### `trackColor`
 
 Custom colors for the switch track.
